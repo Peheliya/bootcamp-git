@@ -1,0 +1,450 @@
+/*Common ####################################################################################################################################################################################*/
+
+header {
+	background: white;
+}
+
+body {
+	background-color: white;
+	font-family: verdana;
+	color: gray;
+}
+
+nav {
+    background: rgb(0, 121, 255);
+	background: linear-gradient(266deg, rgba(0, 121, 255, 1) 0%, rgba(0, 223, 162, 1) 79%);
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 50px;
+}
+
+.nav-text {
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    height: inherit;
+    line-height: 3;
+}
+
+#nav-1{
+position:sticky;
+top:0;
+}
+
+#nav-2{
+        height: 150px;
+        box-shadow: inset 0 7px 20px -7px rgba(0,0,0,0.4);
+}
+
+.nav-text:hover{
+    background-color:rgba(255,255,255,0.3);
+}
+#active-page {
+    background-color:rgba(0,0,0,0.3);
+}
+
+.logo-text{
+    display:inline-flex;
+    color:gray;
+    font-size:1.2em;
+    font-align:center;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:0px;
+    margin-right:auto;
+}
+.logo-image{
+    display: inline-flex;
+    margin-left:auto;
+    margin-right:0px;
+}
+
+.logo-user-icon{
+    height:50px;
+    width:50px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.logo{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+}
+
+footer {
+	background-color: #363636;
+	height: 55px;
+	text-align: center;
+	font-size: 0.8em;
+	position:sticky;
+	bottom:0;
+}
+
+td {
+	padding: 2px;
+}
+
+.center {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+.main-title {
+    margin-top: -120px;
+    margin-left: 20px;
+	color: white;
+	font-size: 1.2em;
+}
+
+.index-image{
+    box-shadow: 7px 7px 20px 7px rgba(0,0,0,0.4);
+    border-radius:10px;
+    margin-top:40px;
+}
+
+/* Page Add User ####################################################################################################################################################################################*/
+
+.p1-left-content ,.p1-right-content{
+    display:flex;
+    background-color: White;
+    padding:50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 7px 7px 20px 7px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    height:500px;
+}
+
+#sec-1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0px;
+    padding-bottom:110px;
+}
+
+#table-p1-l, #table-p1-r {
+    margin-left:auto;
+    margin-right:auto;
+
+}
+#left-side {
+	width: 200px;
+}
+
+#table-p1 {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #4CAF50;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: White;
+}
+
+.full-width {
+	width: 200px;
+	align: center;
+}
+
+.full-width2 {
+	width: 300px;
+	align: center;
+}
+
+.shirt-size-text {
+	font-size: 0.8em;
+}
+
+.bottom-line {
+	border-top: 2px solid;
+	border-color: rgba(255, 0, 96, 1);	/* pink */
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.title-2 {
+	font-size: 1em;
+	color: rgba(0, 121, 255, 1);	/* blue */
+	padding-bottom: 5px;
+}
+
+.btn-delete {
+	background-color: white ;
+	color:#111111;
+	font-size: 1.2em;
+	border: 1px solid rgba(255, 0, 96, 1);
+	width: 150px;
+	height: 30px;
+}
+
+.btn-edit {
+	background-color: white;
+	color: #111111;
+	height: 30px;
+	font-size: 1.2em;
+	border: 1px solid #4CAF50;	/* Green */
+	width: 150px;
+}
+
+.btn-delete {
+	transition-duration: 0.4s;
+}
+
+.btn-edit {
+	transition-duration: 0.4s;
+}
+
+.btn-delete:hover {
+	background-color: rgba(255, 0, 96, 1);	/* pink */
+	color: white;
+}
+
+.btn-edit:hover {
+	background-color: #4CAF50;	/* Green */
+	color: white;
+}
+
+/*Page view all users ####################################################################################################################################################################################*/
+
+#table-p2 {
+	border: 1px solid;
+	background-color: white;
+	display: block;
+	table-layout:fixed;
+	overflow-x: auto;
+	white-space: nowrap;
+	height:660px ;
+	box-shadow: 7px 7px 20px 7px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin-left:15px;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom:50px;
+    font-size:0.99em;
+    padding:5px;
+}
+
+.p2-thead{
+	position: sticky;
+	top: 0;
+}
+
+.table-p2-head * {
+    background-color:white;
+	color: #0079FF;
+	border-bottom: 1px solid;
+	border-left: 2px solid;
+	font: strong;
+	padding: 5px;
+}
+
+.table-p2-data tr:nth-child(2n) {
+	background-color: #eee;
+}
+
+.btn-delete1 {
+	color: gray;
+	border: 2px solid rgba(255, 0, 96, 1);
+	width: 50px;
+	height: 25px;
+}
+
+.btn-delete1:hover {
+	background-color: rgba(255, 0, 96, 1);	/* pink */
+	color: white;
+}
+
+.btn-delete1 {
+	transition-duration: 0.4s;
+}
+
+.btn-edit1 {
+	transition-duration: 0.4s;
+}
+
+.btn-edit1 {
+	color: gray;
+	border: 2px solid #4CAF50;	/* Green */
+	height: 25px;
+	width: 50px;
+}
+
+.btn-edit1:hover {
+	background-color: #4CAF50;	/* Green */
+	color: white;
+}
+
+.table-p2-foot{
+    position:sticky;
+    inset-block-end:0;
+}
+
+.table-p2-foot * {
+	color: #0079FF;
+	background-color:white;
+	border-top: 1px solid;
+	border-left: 0px solid;
+	border-right: 0px solid;
+	border-style: double;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.btn-refresh ,.btn-refresh4 {
+	color: gray;
+	border: 2px solid rgba(0, 121, 255, 1);	/* blue */
+	width: 100px;
+	height: 30px;
+	margin-top: -100px;
+    margin-left: 20px;
+}
+
+.btn-refresh:hover ,.btn-refresh4 :hover{
+	background-color: rgba(0, 121, 255, 1);	/* blue */
+	color: white;
+}
+
+.btn-refresh, .btn-refresh4  {
+	transition-duration: 0.4s;
+}
+
+/*Page add user JS ####################################################################################################################################################################################*/
+
+.p3-top-content {
+    display:block;
+    background-color: White;
+    padding:50px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 7px 7px 20px 7px rgba(0,0,0,0.4);
+    border-radius: 10px;
+	margin-top: 0px;
+}
+
+#table-p3-t{
+	margin-left:auto;
+    margin-right:auto;
+	padding-top: -10px;
+}
+
+#sec-top{
+	display:block;
+    background-color: White;
+    padding:20px;
+	margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 7px 7px 20px 7px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+#sec-bottom{
+	height: 500px;
+}
+
+#sec-2 {
+    display:grid;
+    grid-gap:0px;
+}
+
+.p3-th{
+    width:300px;
+}
+
+#table-p3 {
+	border: 1px solid;
+	background-color: white;
+	display: block;
+	table-layout:fixed;
+	overflow-x: auto;
+	white-space: nowrap;
+	max-height:450px;
+    box-shadow: 7px 7px 20px 7px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin-left:15px;
+    margin-right:15px;
+    margin-top:10px;
+    font-size:0.99em;
+    padding:5px;
+    text-align:center;
+
+}
+
+.p3-thead{
+	position: sticky;
+	top: 0;
+}
+
+.table-p3-head * {
+    background-color:white;
+	color: #0079FF;
+	border-bottom: 1px solid;
+	border-left: 2px solid;
+	font: strong;
+	padding: 5px;
+}
+
+#table-p3 td{
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+}
+
+/* API Page /////////////////////////////////////////////////////////////////////////////*/
+
+#table-p4 {
+	border: 1px solid;
+	background-color: white;
+	display: block;
+	table-layout:fixed;
+	overflow-x: auto;
+	white-space: nowrap;
+	max-height:700px;
+    box-shadow: 7px 7px 20px 7px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin-left:15px;
+    margin-right:15px;
+    font-size:0.99em;
+    padding:5px;
+    text-align:center;
+
+}
+
+.p4-thead{
+	position: sticky;
+	top: 0;
+}
+
+.table-p4-head * {
+    background-color:white;
+	color: #0079FF;
+	border-bottom: 1px solid;
+	border-left: 2px solid;
+	font: strong;
+	padding: 5px;
+}
+
+#table-p4 td{
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+}
+
+#sec-bottom4{
+	height: 700px;
+}
+
+.btn-refresh4{
+	width: 100px;
+	margin-top: -130px;
+	display: block;
+	margin-bottom: 10px;
+} 

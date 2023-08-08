@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User JS</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <p>&nbsp;&nbsp;Mega Apps</p>
+        <img alt="Logo" class="logo-image" height="50px" src="logo.png">
+        <p class="logo-text">IGNEOUS</p>
+        <img class="logo-user-icon" src="sl.ico" alt="country icon">
+        <img class="logo-user-icon" src="user.jpg" alt="user icon">
+    </div>
+
+    <nav id="nav-1">
+        <a class="nav-text" href="index.html">Home</a>
+        <a class="nav-text" href="addUser.html">Add User</a>
+        <a class="nav-text" href="viewUser.html">View All Users</a>
+        <a class="nav-text" href="userJS.html" id="active-page">Add User JS</a>
+        <a class="nav-text" href="tableAPI.html">Table API</a>
+    </nav>
+    <nav id="nav-2"></nav>
+</header>
+
+<main>
+    <p class="main-title" id="asasas">New User JS</p>
+
+        <section id="sec-2">
+            <!-- <div class="p3-top-content"> -->
+            <div id="sec-top">
+                <form action="" id="p3-form"><!--Form -->
+                <table id="table-p3-t"><!--Table with input fields -->
+                    <tbody>
+                    <tr>
+                        <th class="title-2" colspan="2">Add User</th>
+                    </tr>
+                    <tr>
+                        <td class="bottom-line"></td>
+                        <td class="bottom-line"></td>
+                    </tr>
+                    <tr>
+                        <td id="left-side"><label for="fname">First Name</label></td>
+                        <td><input class="full-width2" id="fname" name="fname" placeholder="Jane" required
+                                   tabindex="1" type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input class="full-width2" id="lname" placeholder="Doe" required tabindex="2" type="text"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age</label></td>
+                        <td><input class="full-width2" id="age" max="60" min="18" placeholder="18" required
+                                   tabindex="3" type="number"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-Mail</label></td>
+                        <td><input class="full-width2" id="email" placeholder="abc@email.com" required tabindex="4"
+                                   type="email"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Mobile Number</label></td>
+                        <td><input class="full-width2" id="mobile" maxlength="10" minlength="10"
+                                   placeholder="0711234567"
+                                   required tabindex="5" type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input class="btn-delete" id="reset" name="reset" tabindex="7" type="reset" value="Cancel">
+                            <input class="btn-edit" id="save" name="save" onclick="btn_addUser()" required
+                                   tabindex="6" type="button" value="Save"><!--Save btn -->
+                        </td>
+                    </tr>
+                    </tbody>
+                </table></form>
+            </div>
+            <div id="sec-bottom">
+                <table id="table-p3"><!--Table of data -->
+                    <thead class="p3-thead">
+                    <tr class="table-p3-head">
+                        <th class="p3-th">No</th>
+                        <th class="p3-th">First Name</th>
+                        <th class="p3-th">Last Name</th>
+                        <th class="p3-th">Age</th>
+                        <th class="p3-th">E-Mail</th>
+                        <th class="p3-th">Phone</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-p3-data" id="table-data-js"><!--New data appears here -->
+                    <tr>
+                        <td colspan="6">No Records Available.</td>
+                    </tr>
+                    </tbody>
+                    <tfoot class="table-p2-foot">
+                    <tr>
+                        <td colspan="6" id="table-foot-js">Total Number of Records : 0</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <!-- </div> -->
+        </section>
+
+
+</main>
+
+<footer>
+    <p class="footer">
+        Copyright 2023 &copy; All Rights Received.<br> Developed By - Peheliya De Silva<br/> Contact ~ +94 712 345 678
+    </p>
+</footer>
+</body>
+</html>

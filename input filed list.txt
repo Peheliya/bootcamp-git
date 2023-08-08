@@ -1,0 +1,16 @@
+Name 		text
+email		email
+tel		tel
+address		textarea
+gender		radiob *3
+dob		date
+website		url
+profile pic	file 
+
+
+Fav color	color
+shirt size	range
+quantity	number
+other items	chkbx mug,backpack,headset *3
+
+

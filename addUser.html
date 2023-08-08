@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <p>&nbsp;&nbsp;Mega Apps</p>
+        <img alt="Logo" class="logo-image" height="50px" src="logo.png">
+        <p class="logo-text">IGNEOUS</p>
+        <img class="logo-user-icon" src="sl.ico">
+        <img class="logo-user-icon" src="user.jpg">
+    </div>
+
+    <nav id="nav-1">
+        <a class="nav-text" href="index.html">Home</a>
+        <a class="nav-text" href="addUser.html" id="active-page">Add User</a>
+        <a class="nav-text" href="viewUser.html">View All Users</a>
+        <a class="nav-text" href="userJS.html">Add User JS</a>
+        <a class="nav-text" href="tableAPI.html">Table API</a>
+    </nav>
+    <nav id="nav-2"></nav>
+</header>
+
+<main>
+    <p class="main-title">New User</p>
+    <form action="">
+        <section id="sec-1">
+            <div class="p1-left-content">
+                <table id="table-p1-l">
+                    <tbody>
+                    <tr>
+                        <th class="title-2" colspan="2">Personal Details</th>
+                    </tr>
+                    <tr>
+                        <td class="bottom-line"></td>
+                        <td class="bottom-line"></td>
+                    </tr>
+                    <tr>
+                        <td id="left-side"><label for="name">Name</label></td>
+                        <td><input class="full-width" id="name" placeholder="Jane Doe" type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail</label></td>
+                        <td><input class="full-width" id="email" placeholder="abc@email.com" type="email"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Telephone</label></td>
+                        <td><input class="full-width" id="tel" maxlength="10" minlength="10" placeholder="0712345678"
+                                   type="tel"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address" spellcheck="true">Address</label></td>
+                        <td><Textarea class="full-width" id="address"
+                                      placeholder="no 1,&#013;1st lane,&#013;1st street,&#013;City,&#013;country."
+                                      rows="5"></Textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td><input name="sex" type="radio" value="m"/><label>Male</label>
+                            <input name="sex" type="radio" value="f"/><label>Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input name="sex" type="radio" value="o"/><label>Other</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td><input class="full-width" id="dob" placeholder="Jane Doe" type="date"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="web">Website URL</label></td>
+                        <td><input class="full-width" id="web" placeholder="https://www.abc.com" type="url"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dp">Select Profile Picture</label></td>
+                        <td><input accept="image/jpeg" id="dp" type="file"/></td>
+                    </tr>
+                    <tr>
+                        <td height="10px"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="p1-right-content">
+                <table id="table-p1-r">
+                    <tbody>
+                    <tr>
+                        <th class="title-2" colspan="2">User Details</th>
+                    </tr>
+                    <tr>
+                        <td class="bottom-line"></td>
+                        <td class="bottom-line"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="type">User Type</label></td>
+                        <td>
+                            <select class="full-width" id="type">
+                                <option value="">Select User Type</option>
+                                <option value="1">Administrator</option>
+                                <option value="2">Standard</option>
+                                <option value="3">Staff</option>
+                                <option value="4">Guest</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="un">Username</label></td>
+                        <td><input class="full-width" id="un" placeholder="jane" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pw">Password</label></td>
+                        <td><input class="full-width" id="pw" type="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cpw">Confirm Password</label></td>
+                        <td><input class="full-width" id="cpw" type="password"></td>
+                    </tr>
+                    <tr>
+                        <td height="10px"></td>
+                    </tr>
+                    <tr>
+                        <th class="title-2" colspan="2">Package Details</th>
+                    </tr>
+                    <tr>
+                        <td class="bottom-line"></td>
+                        <td class="bottom-line"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="shirt-color">Shirt Color</label></td>
+                        <td><input id="shirt-color" type="color"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="shirt-size">Shirt Size</label></td>
+                        <td><input class="full-width" id="shirt-size" max="4" min="0" type="range"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label class="shirt-size-text">S &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; M &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXL</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="qty">Quantity</label></td>
+                        <td><input id="qty" max="5" min="1" placeholder="1" type="number" value="1"/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Other Items</label></td>
+                        <td>
+                            <input name="other" type="checkbox" value="mug"/><label>Mug</label>
+                            <input name="other" type="checkbox" value="bag"/><label>Bag</label>
+                            <input name="other" type="checkbox" value="bottle"/><label>Bottle</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td height="10px"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input class="btn-delete reset" name="reset" type="reset" value="Cancel">
+                            <input class="btn-edit submit" name="submit" type="submit" value="Submit">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </form>
+</main>
+<footer>
+    <p class="footer">
+        Copyright 2023 &copy; All Rights Received.<br> Developed By - Peheliya De Silva<br/> Contact ~ +94 712 345 678
+    </p>
+</footer>
+</body>
+</html>

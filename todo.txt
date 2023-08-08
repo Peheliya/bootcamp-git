@@ -1,0 +1,8 @@
+--footre fix bottom
+--table content padding
+--no dark colors
+--logo padding
+--table inside div margin
+--mag 5 colors
+--fix inside scrn
+--use section inside main

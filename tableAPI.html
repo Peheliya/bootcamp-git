@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User JS</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script2.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <p>&nbsp;&nbsp;Mega Apps</p>
+        <img alt="Logo" class="logo-image" height="50px" src="logo.png">
+        <p class="logo-text">IGNEOUS</p>
+        <img class="logo-user-icon" src="sl.ico" alt="country icon">
+        <img class="logo-user-icon" src="user.jpg" alt="user icon">
+    </div>
+
+    <nav id="nav-1">
+        <a class="nav-text" href="index.html">Home</a>
+        <a class="nav-text" href="addUser.html">Add User</a>
+        <a class="nav-text" href="viewUser.html">View All Users</a>
+        <a class="nav-text" href="userJS.html">Add User JS</a>
+        <a class="nav-text" href="tableAPI.html" id="active-page">Table API</a>
+    </nav>
+    <nav id="nav-2"></nav>
+</header>
+
+<main>
+    <section id="p4-sec-top">
+        <input type="button" class="btn-refresh4" value="Load API Data" onclick="loadAPIDataClick()">
+    </section>
+    <section id="p4-sec-bottom">
+        <div id="sec-bottom4">
+            <table id="table-p4"><!--Table of data -->
+                <thead class="p3-thead">
+                <tr class="table-p3-head">
+                    <th class="p3-th">No</th>
+                    <th class="p3-th">Name</th>
+                    <th class="p3-th">Capital</th>
+                    <th class="p3-th">Flag</th>
+                    <th class="p3-th">Currency</th>
+                    <th class="p3-th">Region</th>
+                    <th class="p3-th">Sub Region</th>
+                    <th class="p3-th">Population</th>
+                    <th class="p3-th">Timezone</th>
+                    <th class="p3-th">Languages</th>
+                    <th class="p3-th">Area (km²)</th>
+                </tr>
+                </thead>
+                <tbody class="table-p3-data" id="table-API-js"><!--New data appears here -->
+                <tr>
+                    <td colspan="11">No Records Available.</td>
+                </tr>
+                </tbody>
+                <tfoot class="table-p2-foot">
+                <tr>
+                    <td colspan="11" id="table-foot-js">Total Number of Records : 0</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p class="footer">
+        Copyright 2023 &copy; All Rights Received.<br> Developed By - Peheliya De Silva<br/> Contact ~ +94 712 345 678
+    </p>
+</footer>
+</body>
+</html>
+    
+</body>
+</html>
